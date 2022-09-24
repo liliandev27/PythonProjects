@@ -8,14 +8,14 @@ Acima de 40: "Obesidade mórbida!"'''
 peso = float(input('Qual seu peso? (Kg)'))
 altura = float(input('Qual sua altura? (m)'))
 imc = peso / (altura ** 2)
-print('O IMC dessa pessoa é de {:.1f}'.format(imc))
+print('Seu IMC é {:.1f}'.format(imc))
 if imc < 18.5:
     print('Você está ABAIXO DO PESO normal!')
-elif 18.5 <= 25:
+elif 18.5 <= imc < 25:
     print('Você está no Peso Ideal!')
-elif 25 <= 30:
+elif 25 <= imc < 30:
     print('Você está com Sobrepeso!')
-elif 30 <= 40:
+elif 30 <= imc < 40:
     print('Você está Obeso!')
-elif imc > 40:
+elif imc >= 40:
     print('Você está com Obesidade Mórbida!')
